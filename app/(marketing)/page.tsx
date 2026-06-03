@@ -6,6 +6,7 @@ import HeroComponentThree from "@/components/home/HeroComponentThree";
 import HeroComponentFour from "@/components/home/HeroComponentFour";
 import HeroComponentFive from "@/components/home/HeroComponentFive";
 import HeroComponentSix from "@/components/home/HeroComponentSix";
+import HeroComponentSeven from "@/components/home/HeroComponentSeven";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <HeroComponentFour />
       <HeroComponentFive />
       <HeroComponentSix />
+      <HeroComponentSeven />
       
       {/* HeroComponentTwo will map right below here */}
     </main>
