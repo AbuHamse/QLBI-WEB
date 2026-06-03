@@ -25,7 +25,7 @@ export default function HeroComponentOne() {
       {/* Content Container Matrix */}
       <div className="relative z-10 mx-auto max-w-4xl text-center">
         {/* Upper Muted Label - CozySpace Design Pattern */}
-        <span className="inline-block animate-fade-in-up text-[11px] font-bold uppercase tracking-[0.25em] text-brand-muted">
+        <span className="inline-block animate-fade-in-up text-[16px] font-bold uppercase tracking-[0.25em] text-brand-muted">
           Welcome to QLBI
         </span>
 
