@@ -1,7 +1,14 @@
-export default function HomePagePage() {
+// app/(marketing)/page.tsx
+import React from "react";
+import HeroComponentOne from "@/components/home/HeroComponentOne";
+
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold tracking-tight">HomePage Page</h1>
+    <main className="w-full">
+      {/* Phase 1: Main Introduction Block */}
+      <HeroComponentOne />
+      
+      {/* HeroComponentTwo will map right below here */}
     </main>
   );
 }
