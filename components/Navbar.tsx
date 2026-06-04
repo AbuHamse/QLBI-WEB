@@ -14,6 +14,7 @@ export default function Navbar() {
       title: "About",
       href: "/about",
       items: [
+        { label: "Overview", href: "/about" },
         { label: "Our Mission", href: "/about/mission" },
         { label: "Our Vision", href: "/about/vision" },
         { label: "Our Values", href: "/about/values" },
