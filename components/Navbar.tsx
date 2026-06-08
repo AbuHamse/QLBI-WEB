@@ -85,7 +85,9 @@ export default function Navbar() {
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <button className="flex items-center gap-x-1 text-sm font-medium tracking-wide text-brand-charcoal hover:text-brand-muted transition-colors py-2 cursor-pointer">
-                {group.title}
+                <Link href={group.href}>
+                  {group.title}
+                </Link>
                 <ChevronDown className="h-3 w-3 opacity-70" />
               </button>
 
