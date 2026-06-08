@@ -4,63 +4,69 @@ import { User, Heart, Sparkles } from "lucide-react";
 
 export default function CreateProfileComponentTwo() {
   return (
-    <section className="w-full py-24 bg-[#F6EFE9] text-[#221B1F] px-6 md:px-16 border-b border-[#D89A9E]/30">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-8">
-        
-        {/* Left Side: Tall Feature Box */}
-        <div className="w-full lg:w-1/2 bg-white/40 border border-[#D89A9E]/20 p-8 md:p-12 flex flex-col justify-between transition-all duration-300 hover:border-[#D89A9E]/60 group rounded-sm">
-          <div>
-            <div className="w-10 h-10 rounded-full bg-[#F2C9B6]/20 flex items-center justify-center mb-8 text-[#D89A9E] transition-colors group-hover:bg-[#F2C9B6]/40">
-              <User className="w-5 h-5" />
+    <section className="w-full py-28 md:py-36 bg-[#F6EFE9] text-[#221B1F] px-6 md:px-16 lg:px-24 flex justify-center relative overflow-hidden">
+      {/* Structural layout balance line */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[1px] bg-[#D89A9E]/20" />
+
+      <div className="max-w-7xl w-full">
+        {/* Top Header Block: Broad Apple-inspired typography grid layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start pb-16 mb-20 border-b border-[#D89A9E]/20">
+          <div className="lg:col-span-5">
+            <div className="inline-flex items-center gap-3 text-[#D89A9E] mb-4">
+              <User className="w-4 h-4 stroke-[1.2]" />
+              <span className="text-[10px] tracking-[0.3em] uppercase font-semibold">
+                The Profile Canvas
+              </span>
             </div>
-            <span className="text-xs tracking-[0.3em] uppercase text-[#D89A9E] font-medium block mb-4">
-              Step 01 // Introduction
-            </span>
-            <h2 className="text-3xl md:text-5xl font-light font-serif tracking-tight text-[#0A0A0C] leading-tight">
-              Start with your story
+            <h2 className="text-4xl md:text-5xl font-light font-serif tracking-tight text-[#0A0A0C] uppercase leading-tight">
+              Start with <br /> your story
             </h2>
           </div>
           
-          <p className="mt-12 text-base text-[#221B1F]/80 font-light leading-relaxed max-w-md">
-            Your profile is more than a photo and a name. It&#39;s an opportunity to share your background, interests, values, goals, and what you're looking for in a future spouse.
-          </p>
+          <div className="lg:col-span-7 lg:pt-10">
+            <p className="text-base md:text-lg text-[#221B1F]/70 font-light leading-relaxed max-w-xl tracking-wide">
+              Your profile is more than a dataset. It is a secure, intentional opportunity to curate your background, honors, worldview, and the specific spiritual and physical trajectory you envision for your future household.
+            </p>
+          </div>
         </div>
 
-        {/* Right Side: Two Stacked Horizontal Boxes */}
-        <div className="w-full lg:w-1/2 flex flex-col gap-8">
+        {/* Bottom Feature Columns: Elegant Neo-Minimalist Content Distribution */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
           
-          {/* Top Stacking Card */}
-          <div className="flex-1 bg-white/40 border border-[#D89A9E]/20 p-8 flex flex-col justify-center transition-all duration-300 hover:border-[#D89A9E]/60 group rounded-sm">
-            <div className="flex items-start gap-5">
-              <div className="w-8 h-8 rounded-full bg-[#F2C9B6]/20 flex items-center justify-center text-[#D89A9E] shrink-0 mt-1">
-                <Sparkles className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-lg font-serif text-[#0A0A0C] tracking-wide mb-2">
-                  Background &amp; Aspirations
-                </h3>
-                <p className="text-sm text-[#221B1F]/70 font-light leading-relaxed">
-                  Reflect deeply on your path and detail your long-term worldview. Giving context to your upbringing and future intentions establishes clear alignment early on.
-                </p>
-              </div>
+          {/* Left Column: Background & Aspirations */}
+          <div className="flex flex-col items-start relative group">
+            {/* Soft background glow transition on hover to match Apple/Stripe polish */}
+            <div className="absolute -inset-4 bg-white/20 opacity-0 group-hover:opacity-100 rounded-xl transition-all duration-500 -z-10" />
+            
+            <div className="w-10 h-10 rounded-full border border-[#D89A9E]/30 flex items-center justify-center text-[#D89A9E] bg-white/40 mb-6 shadow-sm transition-colors group-hover:border-[#D89A9E]/60">
+              <Sparkles className="w-4 h-4 stroke-[1.3]" />
             </div>
+            
+            <h3 className="text-xl font-serif text-[#0A0A0C] tracking-wide mb-3 uppercase font-medium">
+              Background & Aspirations
+            </h3>
+            
+            <p className="text-sm md:text-base text-[#221B1F]/70 font-light leading-relaxed tracking-wide">
+              Reflect deeply on your path and detail your long-term worldview. Giving honest context to your upbringing, values, and personal evolution establishes foundational alignment early on.
+            </p>
           </div>
 
-          {/* Bottom Stacking Card */}
-          <div className="flex-1 bg-white/40 border border-[#D89A9E]/20 p-8 flex flex-col justify-center transition-all duration-300 hover:border-[#D89A9E]/60 group rounded-sm">
-            <div className="flex items-start gap-5">
-              <div className="w-8 h-8 rounded-full bg-[#F2C9B6]/20 flex items-center justify-center text-[#D89A9E] shrink-0 mt-1">
-                <Heart className="w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-lg font-serif text-[#0A0A0C] tracking-wide mb-2">
-                  Marital Outlook
-                </h3>
-                <p className="text-sm text-[#221B1F]/70 font-light leading-relaxed">
-                  Clearly express what you hope to build with a partner. Articulating your vision of an intentional home helps set foundational expectations with sincerity.
-                </p>
-              </div>
+          {/* Right Column: Marital Outlook */}
+          <div className="flex flex-col items-start relative group">
+            {/* Soft background glow transition on hover */}
+            <div className="absolute -inset-4 bg-white/20 opacity-0 group-hover:opacity-100 rounded-xl transition-all duration-500 -z-10" />
+            
+            <div className="w-10 h-10 rounded-full border border-[#D89A9E]/30 flex items-center justify-center text-[#D89A9E] bg-white/40 mb-6 shadow-sm transition-colors group-hover:border-[#D89A9E]/60">
+              <Heart className="w-4 h-4 stroke-[1.3]" />
             </div>
+            
+            <h3 className="text-xl font-serif text-[#0A0A0C] tracking-wide mb-3 uppercase font-medium">
+              Marital Outlook
+            </h3>
+            
+            <p className="text-sm md:text-base text-[#221B1F]/70 font-light leading-relaxed tracking-wide">
+              Clearly express what you hope to build with a partner. Articulating your vision of a deliberate, peace-filled home helps set clear reciprocal expectations with total transparency.
+            </p>
           </div>
 
         </div>

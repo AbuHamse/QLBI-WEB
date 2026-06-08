@@ -56,7 +56,7 @@ export default function CreateProfileComponentSix() {
         <div className="w-full bg-white/30 border border-[#D89A9E]/20 p-8 md:p-12 rounded-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-8 transition-colors hover:border-[#D89A9E]/40">
           <div className="max-w-xl">
             <span className="text-xs tracking-[0.3em] uppercase text-[#D89A9E] font-medium block mb-3">
-              Step 04 // Transparency
+              QLBI Transparency
             </span>
             <h2 className="text-2xl md:text-3xl font-light font-serif tracking-tight text-[#0A0A0C]">
               Present yourself honestly
