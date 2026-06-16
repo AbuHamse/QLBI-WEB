@@ -1,7 +1,28 @@
+import React from "react";
+import FeaturesHeroComponent from "@/components/features/FeaturesHeroComponent";
+import FeaturesOverviewComponent from "@/components/features/FeaturesOverviewComponent";
+import FeaturesHorizonComponent from "@/components/features/FeaturesHorizonComponent";
+import FeaturesCTAComponent from "@/components/features/FeaturesCTAComponent";
+
+export const metadata = {
+  title: "Platform Features | QLBI",
+  description: "Explore the intentional, value-driven layers of the QLBI platform—engineered for clarity, secure messaging, and traditional family alignment.",
+};
+
 export default function FeaturesPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold tracking-tight">Features Page</h1>
+    <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      {/* Component 1: Full-Screen Motion Intro */}
+      <FeaturesHeroComponent />
+
+      {/* Component 2: Architectural Overview Grid */}
+      <FeaturesOverviewComponent />
+
+      {/* Component 3: Core Pillars Horizon Row */}
+      <FeaturesHorizonComponent />
+
+      {/* Component 4: The Anchor Outro */}
+      <FeaturesCTAComponent />
     </main>
   );
 }
